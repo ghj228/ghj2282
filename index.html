@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ШАПКА САЙТА -->
+    <header>
+        <div class="logo">МойСайт</div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="#">О нас</a>
+            <a href="#">Контакты</a>
+        </nav>
+    </header>
+
+    <!-- ОСНОВНОЙ БЛОК С ФОРМОЙ -->
+    <main>
+        <div class="form-container">
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <!-- Поле: Имя -->
+                <div class="form-group">
+                    <label for="name">Имя *</label>
+                    <input type="text" id="name" name="name">
+                    <div class="error" id="nameError"></div>
+                </div>
+
+                <!-- Поле: Email -->
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email">
+                    <div class="error" id="emailError"></div>
+                </div>
+
+                <!-- Поле: Пароль -->
+                <div class="form-group">
+                    <label for="password">Пароль *</label>
+                    <input type="password" id="password" name="password">
+                    <div class="error" id="passwordError"></div>
+                </div>
+
+                <!-- Поле: Подтверждение пароля -->
+                <div class="form-group">
+                    <label for="confirmPassword">Подтвердите пароль *</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                    <div class="error" id="confirmError"></div>
+                </div>
+
+                <button type="submit">Зарегистрироваться</button>
+                <div id="formSuccess" class="success"></div>
+            </form>
+        </div>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer>
+        <p>© 2026, Мой сайт с формой регистрации</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
